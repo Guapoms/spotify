@@ -2,55 +2,103 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Spotify</title>
-    <link rel="stylesheet" href="index.html">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotiPHY</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="../spotify/JS/bootstrap.bundle.min.js">
-    
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="styles/bootstrap.css">
 </head>
-<body data-bs-theme="light"> 
-    <div id="root"class=container-fluid p-0 m-0>
-        <!-- As a link -->
-<nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-    </div>
-  </nav>
-  
-  <!-- As a heading -->
-  <nav class="navbar navbar-expand-md">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">Navbar</span>
-     
-        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
-            <ul class="navbar-nav">
-              <a class="navbar-brand" href="#"> <img src="assets/images/logo/logoWithName.svg" alt=""></a>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Your Music</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Install App</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contatos</a>
-              </li>
-            </ul>
-    </div>
-  </nav>
-
-    </div>
-
+<body>
+    
     <header>
-        <nav class="">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <!---MODAL--->
+                  <img src="layout/Logo/spotify-logo.svg" class="" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">FEATURED</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">GENRES & MOODS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">NEW RELEASES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">DISCOVER</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
-        </nav>
-
+          <aside class="fixed-modal">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+              <img src="Logo/spotify-logo.svg" alt="Logo">
+            </button>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Ofcanvas with body scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+              </div>
+            </div>
+          </aside>
     </header>
-    <main></main>
+
+    <main>
+      <section id="introSection" class="container-fluid p-1 my-0 mx-1 text-center">
+        <h3 class="my-4" style="color: var(--azul);">Sinatra</h3>
+        <div id="grupomusics" class="container row mx-auto my-2">
+            <!-- GRID - 12 COLUNAS e é definido pelo row -->
+            <!-- <element class="col-x"> col é o atributo responsável pelas colunas e x pela quantidade ocupada -->
+            <div class="col-3 m-0 p-0">
+                <img src="Álbuns - Músicas/ab67616d00001e020f3661d1ead65b628e037b31.jpg" class="w-100" alt="">
+            </div>
+            <div class="col-3 m-0 p-0">
+              <img src="Álbuns - Músicas/ab67616d00001e0208c63cf0aa88f47866a9df01.jpg" class="w-100" alt="Pop food">
+          </div>
+          <div class="col-3 m-0 p-0">
+            <img src="Álbuns - Músicas/ab67616d00001e02661d019f34569f79eae9e985.jpg" class="w-100" alt="David Guetta">
+        </div>
+        <div class="col-3 m-0 p-0">
+          <img src="Álbuns - Músicas/ab67616d00001e029b057c2bcfced3d43740adaa.jpg" class="w-100" alt="Divide">
+      </div>
+      <div class="col-3 m-0 p-0">
+        <img src="Álbuns - Músicas/ab67616d0000b2730dc783d4389fcf7b8cf89141.jpg" class="w-100" alt="Angus">
+    </div>
+    <div class="col-3 m-0 p-0">
+      <img src="Álbuns - Músicas/ab67616d0000b2730dc783d4389fcf7b8cf89141.jpg" class="w-100" alt="Anitta">
+  </div>
+  <div class="col-3 m-0 p-0">
+    <img src="Álbuns - Músicas/ab67616d0000b27310fd04f0803af98839d6c252.jpg" class="w-100" alt="MC e DJ ">
+</div>
+<div class="col-3 m-0 p-0">
+  <img src="Álbuns - Músicas/ab67616d0000b27344d34793d0f4bddf28e0e8a8.jpg" class="w-100" alt="Outcast">
+</div>
+
+
+  
+    
+      
+        
+         
+       
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+
     
 </body>
 </html>
